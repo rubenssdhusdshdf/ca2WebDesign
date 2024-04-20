@@ -1,0 +1,448 @@
+    /* General styles */
+
+    :root { /* Colors used */
+        --block-background: #FFE8DE;
+        --brown-shadow: #371F15;
+        --blue-complementary: #078C7A;
+        --light-blue: #8CFFF0;
+    }
+
+    .jersey-10-charted-regular { /*Tagline */
+        font-family: "Jersey 10 Charted", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%; 
+    }
+
+    html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+
+    }
+
+       h1, p {  /* Styling text */
+        color: var(--brown-shadow);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        width: 100%;
+        text-align: center;
+        min-width: 320px;
+        max-width: 500px;
+        display: block;
+        margin: 0 auto;
+        font-family: "Noto Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings:
+          "wdth" 100;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .navbar-brand { /* tagline  */
+        font-family: "Jersey 10 Charted", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+  /* Navigational menu styling */
+
+  .navbar {
+    margin: 0;
+    background-color: var(--block-background);
+    padding: 0;
+    width: 100%;
+    --bs-navbar-padding-y: 0; /* Override the padding */
+  }
+
+  .navbar-brand {
+    padding-right: 10px;
+  }
+
+  .navbar-expand-lg {
+    margin-top: 0;
+    background-color: var(--block-background);
+    padding: 0;
+  }
+  
+  .bg-light {
+    margin-top: 0;
+    background-color: var(--block-background);
+    padding: 0;
+  }
+
+  .container-fluid {
+    background-color: var(--block-background);
+  }
+ 
+  a.nav-link {
+    color: var(--brown-shadow);
+  }
+
+  .nav-item {
+    color: var(--block-background);
+  }
+
+  .navbar-nav .nav-link {   /*navigational menus */
+    padding-top: 0;
+    padding-left: 5px !important;
+  }
+
+  .navbar-collapse {  /* Hamburguer menu of the mobile options */
+    background-color: var(--block-background);
+  }
+  
+  .nav-link-active {    /* It changes the colour of the active link in the nav menu*/
+    text-decoration: none;
+    color: var(--blue-complementary);
+  }
+
+    header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        background-color: var(--block-background);
+        align-items: center
+    }
+
+    header > img {
+        padding: 16px;
+    }
+
+    /* MAIN SECTION FROM CONTACT PAGE*/
+
+    .main-contact {
+        margin-top: 20px;
+    }
+
+    /* FORM FROM CONTACT PAGE */
+
+    form {
+        margin-left: 16px;
+        margin-right: 16px;
+        min-width: 300px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .submit-button {
+        font-weight: 600;
+    }
+
+    input {
+        width: calc(100% - 32px);
+        border: none;
+        background: var(--block-background);
+        height: 39px;
+        margin: 0 auto;
+    }
+
+    label {
+        font-size: 18px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: var(--brown-shadow)
+    }
+
+    select {
+        width: calc(100% - 32px);
+        border: none;
+        background: var(--block-background);
+        height: 39px;
+        margin: 0 auto;
+        font-size: 16px; 
+    }
+
+    .form-check-label {
+        padding-bottom: 8px;
+    }
+
+    textarea {
+        width: calc(100% - 32px);
+        height: 109px; 
+        border: none;
+        background: var(--block-background);
+        margin: 0 auto;
+        font-size: 16px; 
+    }
+
+    input[type="submit"] {
+        background-color: var(--blue-complementary);
+        color: var(--light-blue);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 18px;
+        width: calc(100% - 32px);
+        font-weight: 600;
+    }
+
+    .submit-button {
+        background-color: var(--blue-complementary);
+        color: var(--light-blue);
+        border: none;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        min-width: 320px;
+        max-width: 500px;
+        display: block;
+        margin: 0 auto;
+        display: block;
+    }
+
+/* PAELLA HOME SECTION */
+
+ .paella-image { /* paella image, I want that the image displays proportionally in all the devices */
+    min-width: 280px;
+    height: 600px;
+    background-image: url('./Assets/images/paella.jpg');
+    background-size: cover;
+}
+
+/* For devices smaller than 300px */
+@media (min-width: 299px) {
+    .paella-image {
+      height: 400px; /* Adjust the height for smaller screens */
+    }
+  }
+  
+  /* For devices between 330px and 570px */
+  @media (min-width: 570px) {
+    .paella-image {
+      height: 600px; /* Adjust the height for smaller screens */
+    }
+  }
+  
+
+.h1-home,
+.p-home {
+    text-align: center;
+}
+
+.h1-home-section {
+    margin: 20px auto; 
+    max-width: 500px; 
+    padding: 0 16px; 
+}
+
+.accordion {
+    padding: 0 16px;
+
+}
+.accordion-item {
+    min-width: 300px;
+    max-width: 500px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.accordion-button {
+    background-color: var(--block-background);
+}
+
+.home-video-container {
+    padding: 0 16px;
+}
+
+/* h1 animation */
+
+  
+
+.h2-home,
+.h3-home{
+    margin-top:20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+
+.home-video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    max-width: 500px;
+    margin: 0 auto; /* Center horizontally */
+}
+
+.boucher-p {
+   text-align: center; 
+   margin-top: 20px;
+}
+
+.boucher-a {
+    color: var(--brown-shadow); 
+    font-weight: bold; 
+    text-decoration: none; 
+    border-bottom: 1px solid var(--brown-shadow);
+}
+
+/* Custom CSS for accordion button */
+.accordion-button {
+    background-color: transparent; /* Set background color to transparent */
+  }
+  
+  /* Custom CSS for accordion button when not collapsed */
+  .accordion-button:not(.collapsed) {
+    background-color: var(--brown-shadow); /* Set background color when not collapsed */
+    color: var(--block-background); /* Set text color when not collapsed */
+  }
+
+    
+/* FOOTER SECTION*/
+
+footer {
+    background-color: var(--brown-shadow);
+}
+
+.footer-description {
+    color: var(--block-background);
+}
+
+.container .my-5{
+    color: var(--block-background);
+}
+
+.footer-container{
+    color: var(--block-background);
+}
+
+.container {
+    background-color: var(--brown-shadow);
+}
+
+.text-center .p-3 {
+    width: 100%;
+}
+
+/* Location */
+
+.h1-locations {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.row {
+    margin-left: 20px
+}
+.corck {
+    width: 100%;
+    height: 600px;
+    background-image: url(Assets/images/corck.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.dublin {
+    width: 100%;
+    height: 600px;
+    background-image: url(Assets/images/Dublin.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.belfast {
+    width: 100%;
+    height: 600px;
+    background-image: url(Assets/images/belfast.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.galway {
+    width: 100%;
+    height: 600px;
+    background-image: url(Assets/images/galway.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+  /* Menu */
+
+.h1-menu {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 20px;
+    min-width: 300px;
+}
+
+.p-game {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 20px;
+    min-width: 300px;
+}
+
+.menu-select {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 16px;
+    padding-right: 16px;
+    min-width: 300px;
+    max-width: 500px;
+}
+.body-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-select,
+#fideua,
+#seafood,
+#vegan,
+#chicken {
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+.menu-h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.fideua-image {
+    min-width: 300px;
+    height: 200px;
+    background-size: cover;
+    max-width: 500px;
+    background-image: url('Assets/images/fideua.jpg') ;
+}
+
+.chicken-image {
+    min-width: 300px;
+    height: 200px;
+    background-size: cover;
+    max-width: 500px;
+    background-image: url('Assets/images/chicken-paella.jpg') ;
+}
+.vegan-image {
+    min-width: 300px;
+    height: 200px;
+    background-size: cover;
+    max-width: 500px;
+    background-image: url('Assets/images/vegan-paella.jpg') ;
+}
+.seafood-image {
+    min-width: 300px;
+    height: 200px;
+    background-size: cover;
+    max-width: 500px;
+    background-image: url('Assets/images/seafood-paella.jpg') ;
+}
+
